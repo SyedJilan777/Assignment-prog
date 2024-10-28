@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="border" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="53.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../library.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="Dashboard" layoutX="172.0" layoutY="25.0" text="Dashboard">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="profile" text="Profile">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="search" text="Search">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="book" text="Book">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="cart" text="Cart">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="history" layoutX="421.0" layoutY="25.0" text="History">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="signuot" text="Signout">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../download.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+   </center>
+   <center>
+      <AnchorPane fx:id="content" prefHeight="200.0" prefWidth="807.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" layoutX="28.0" layoutY="49.0" prefHeight="274.0" prefWidth="667.0">
+              <columns>
+                <TableColumn fx:id="sno" prefWidth="41.0" text="s.no" />
+                <TableColumn fx:id="allbook" prefWidth="316.5" text="Books" />
+                  <TableColumn fx:id="author" prefWidth="146.5" text="Author" />
+                  <TableColumn fx:id="price" prefWidth="63.5" text="Price" />
+                  <TableColumn fx:id="actionColumn" prefWidth="79.5" />
+              </columns>
+            </TableView>
+            <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="5.0" prefHeight="18.0" prefWidth="649.0" textAlignment="CENTER" textFill="#76e804" />
+            <Label fx:id="welcome" alignment="CENTER" layoutX="35.0" layoutY="23.0" prefHeight="20.0" prefWidth="651.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
